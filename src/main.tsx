@@ -1,9 +1,9 @@
-import { StrictMode, Suspense } from 'react'
+import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 
 import { Toaster } from 'sonner'
-import { ClientInformation } from './08-use-suspense/ClientInformation'
-import { getUserAction } from './08-use-suspense/api/get-user.action'
+//import { ClientInformation } from './08-use-suspense/ClientInformation'
+//import { getUserAction } from './08-use-suspense/api/get-user.action'
 //import { InstagromApp } from './07-useOptimistic/InstagromApp'
 //import { MemoCounter } from './06-memos/MemoCounter'
 //import { MemoHook } from './06-memos/MemoHook';
@@ -16,6 +16,7 @@ import { getUserAction } from './08-use-suspense/api/get-user.action'
 //import { TrafficLight } from './01-useState/TRafficLight'
 //import { TrafficLightWithEffect } from './02-useEffect/TrafficLightWithEffect'
 //import { PokemonPage } from './03-examples/PokemonPage'
+import { ProfessionalApp } from './09-useContext/ProfessionalApp'
 import './index.css'
 
 
@@ -33,7 +34,7 @@ createRoot(document.getElementById('root')!).render(
     {/*<MemoHook /> */}
     {/*<MemoCounter /> */}
     {/* <InstagromApp /> */}
-    <Suspense
+    {/* <Suspense
       fallback={
         <div className='bg-gradient flex flex-col'>
           <h1 className='text-2xl'>Cargando...</h1>
@@ -41,6 +42,7 @@ createRoot(document.getElementById('root')!).render(
       }
     >
       <ClientInformation getUser={getUserAction(1000)} />
-    </Suspense>
+    </Suspense> */}
+    <ProfessionalApp />
   </StrictMode>,
 )
